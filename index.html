@@ -41,7 +41,7 @@
 								<a href="#" class="menu__link">Faq</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link menu__link_border">Login</a>
+								<a href="#" class="menu__link menu__link_border menu__link_border-mobile">Login</a>
 							</li>
 							<li class="menu__item">
 								<a href="#" class="menu__link menu__link_arrow">Be a pro</a>
@@ -113,31 +113,37 @@
 					<div class="page-content__body">
 						<ul class="positions">
 							<li class="positions__item">
-								<div class="positions__item-left">
-									<h2 class="positions__title">Senior ui/ux designer</h2>
-									<p class="positions__desc">Coral Gables, FL</p>
-								</div>
-								<div class="positions__item-right">
-									<a href="#" class="positions__link">Learn more</a>
-								</div>	
+								<a href="#" class="positions__link">
+									<div class="positions__item-left">
+										<h2 class="positions__title">Senior ui/ux designer</h2>
+										<p class="positions__desc">Coral Gables, FL</p>
+									</div>
+									<div class="positions__item-right">
+										<a href="#" class="positions__right-link">Learn more</a>
+									</div>
+								</a>	
 							</li>
 							<li class="positions__item">
-								<div class="positions__item-left">
-									<h2 class="positions__title">Senior ui/ux designer</h2>
-									<p class="positions__desc">Coral Gables, FL</p>
-								</div>
-								<div class="positions__item-right">
-									<a href="#" class="positions__link">Learn more</a>
-								</div>
+								<a href="#" class="positions__link">
+									<div class="positions__item-left">
+										<h2 class="positions__title">Senior ui/ux designer</h2>
+										<p class="positions__desc">Coral Gables, FL</p>
+									</div>
+									<div class="positions__item-right">
+										<a href="#" class="positions__right-link">Learn more</a>
+									</div>
+								</a>	
 							</li>
 							<li class="positions__item">
-								<div class="positions__item-left">
-									<h2 class="positions__title">Senior ui/ux designer</h2>
-									<p class="positions__desc">Coral Gables, FL</p>
-								</div>
-								<div class="positions__item-right">
-									<a href="#" class="positions__link">Learn more</a>
-								</div>
+								<a href="#" class="positions__link">
+									<div class="positions__item-left">
+										<h2 class="positions__title">Senior ui/ux designer</h2>
+										<p class="positions__desc">Coral Gables, FL</p>
+									</div>
+									<div class="positions__item-right">
+										<a href="#" class="positions__right-link">Learn more</a>
+									</div>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -171,7 +177,7 @@
 
 				<div class="footer__about ">
 					<div class="footer__about-form">
-						<h4 class="footer__title">Stay in touch</h4>
+						<h4 class="footer__title-about">Stay in touch</h4>
 						<div class="footer__form">
 							<form class="form" action="#" method="POST">
 								<div class="footer__field">
@@ -254,6 +260,10 @@
 							</li>
 						</ul>
 					</section>
+					<div class="plus">
+						<span class="stick-1"></span>
+						<span class="stick-2"></span>
+					</div>
 				</div>
 			</div>
 			<!-- FOOTER-BOTTOM -->
@@ -261,9 +271,15 @@
 				<div class="footer__copy">© 2018 <span>taxgig</span>. All rights reserved.</div>
 			</div>
 		</div>
-	</footer>				
+	</footer>	
+			
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/common.js"></script>
+	<script> 
+		$('.footer__title').on('click', function() {
+  			$(this).next().toggleClass('.opened'); return false;
+		});
+	</script>
 
 
 </body>

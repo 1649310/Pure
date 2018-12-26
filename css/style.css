@@ -227,7 +227,7 @@ button, input {
   vertical-align: middle;
   margin-left: 15px; }
 
-.menu__link_display {
+.menu__item_display {
   display: none; }
 
 .breadcrumbs {
@@ -342,11 +342,17 @@ button, input {
   font: 400 16px 'Work Sans';
   color: #6F7583; }
 
-.positions__link {
+.positions__right-link {
+  color: transparent; }
+
+.positions__item:hover .positions__right-link {
   font: 600 14px 'Work Sans';
   color: #86BE26;
-  text-transform: uppercase; }
-  .positions__link::after {
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .positions__item:hover .positions__right-link::after {
     content: "";
     width: 28px;
     height: 10px;
@@ -429,9 +435,14 @@ button, input {
   margin-right: 125px;
   width: 384px; }
 
-.footer__title {
+.footer__title-about {
   color: #FDFDFD;
   font: 700 24px 'Lora';
+  margin-bottom: 25px; }
+
+.footer__title {
+  color: #FDFDFD;
+  font: 700 20px 'Lora';
   margin-bottom: 25px; }
 
 .footer__field {
@@ -556,7 +567,7 @@ button, input {
   .footer__column {
     margin-bottom: 30px;
     margin-right: 201px; }
-  h5 {
+  .footer__title {
     font-size: 18px; }
   .footer__column_section {
     margin-top: 0; } }
@@ -602,10 +613,10 @@ button, input {
       position: absolute;
       background: url(../img/logo-footer.png) no-repeat;
       top: 15px;
-      right: -29px;
       left: 24px;
-      bottom: -14px;
-      z-index: 1; }
+      z-index: 1;
+      width: 110px;
+      height: 40px; }
   .menu__item {
     margin-left: 24px;
     margin-right: 0; }
@@ -615,24 +626,21 @@ button, input {
     color: #FDFDFD;
     font-size: 24px;
     text-transform: none;
-    line-height: 3;
-    width: 344px;
+    line-height: 3; }
+    .menu__link:hover {
+      text-decoration: none;
+      color: #FDFDFD; }
+  .menu__link_border {
+    background: #86BE26;
     -webkit-border-radius: 5px;
             border-radius: 5px;
-    display: inline-block; }
-    .menu__link:hover {
-      background: #86BE26;
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
-      text-transform: uppercase;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s;
-      color: #FDFDFD;
-      text-decoration: none; }
-  .menu__link_border {
+    text-transform: uppercase;
+    color: #FDFDFD;
+    display: inline-block;
+    width: 344px;
     border: none;
-    padding: 0; }
+    font-size: 16px;
+    padding: 6px 0; }
   .menu__link_arrow::after {
     display: none; }
   .breadcrumbs {
@@ -640,7 +648,10 @@ button, input {
   .breadcrumbs__link {
     padding-left: 182px; }
   .footer__about-form {
-    width: 344px; } }
+    width: 344px; }
+  .footer__link:hover {
+    text-decoration: none;
+    color: #FDFDFD; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -652,7 +663,7 @@ button, input {
   .menu {
     text-align: left;
     line-height: 24px; }
-  .menu__link:hover {
+  .menu__link_border-mobile {
     background: -webkit-linear-gradient(202.22deg, #C4E58B -41.78%, #86BE26 63.15%);
     background: -o-linear-gradient(202.22deg, #C4E58B -41.78%, #86BE26 63.15%);
     background: linear-gradient(247.78deg, #C4E58B -41.78%, #86BE26 63.15%);
@@ -660,12 +671,9 @@ button, input {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     text-transform: uppercase;
-    padding: 16px 120px;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
-  .menu__link_arrow:hover {
-    padding: 16px 108px; }
+    width: 276px;
+    padding: 6px 0;
+    text-align: center; }
   .menu__link_display {
     padding: 0; }
   .breadcrumbs__link {
@@ -697,8 +705,6 @@ button, input {
     display: none; }
   .question {
     padding-top: 85px; }
-  .question__title {
-    font-size: 24px; }
   .question__desc {
     max-width: 100%; }
   .footer__top {
@@ -735,8 +741,21 @@ button, input {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     margin-bottom: 0; }
-  .footer__column_section {
-    margin-bottom: 30px; } }
+  .footer__item:last-child {
+    margin-bottom: 25px; }
+  .footer__title {
+    position: relative; }
+    .footer__title:before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #FDFDFD;
+      display: block;
+      position: absolute;
+      right: -200px;
+      top: 13px; }
+  ul .opened {
+    display: none; } }
 
 @media (max-width: 768px) {
   .burger {
