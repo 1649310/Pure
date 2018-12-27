@@ -1,5 +1,4 @@
 /* reset */
-/* main variables */
 body {
   margin: 0px;
   padding: 0px;
@@ -620,6 +619,12 @@ button, input {
   .menu__item {
     margin-left: 24px;
     margin-right: 0; }
+  .menu__item_border {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6;
+    text-align: center; }
   .menu__item_display {
     display: inline-block; }
   .menu__link {
@@ -647,15 +652,23 @@ button, input {
     margin-bottom: 40px; }
   .breadcrumbs__link {
     padding-left: 182px; }
+  .button:hover {
+    background: -webkit-linear-gradient(198.04deg, #C4E58B -41.78%, #86BE26 63.15%);
+    background: -o-linear-gradient(198.04deg, #C4E58B -41.78%, #86BE26 63.15%);
+    background: linear-gradient(251.96deg, #C4E58B -41.78%, #86BE26 63.15%);
+    color: #FDFDFD;
+    border: 1px solid transparent; }
   .footer__about-form {
     width: 344px; }
   .footer__link:hover {
     text-decoration: none;
     color: #FDFDFD; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .container {
     padding: 0 22px; }
+  .wrapper::after {
+    height: auto; }
   .header {
     -webkit-box-shadow: 0px 1px 10px rgba(41, 47, 66, 0.1);
             box-shadow: 0px 1px 10px rgba(41, 47, 66, 0.1);
@@ -705,8 +718,13 @@ button, input {
     display: none; }
   .question {
     padding-top: 85px; }
+  .question__title {
+    font-size: 24px; }
   .question__desc {
     max-width: 100%; }
+  .footer {
+    height: auto;
+    margin-top: auto; }
   .footer__top {
     padding-top: 260px; }
   .footer__about {
@@ -730,8 +748,6 @@ button, input {
   .footer__input {
     border: 1px solid rgba(41, 47, 66, 0.1);
     padding: 16px 24px; }
-  .footer__submit {
-    display: none; }
   .footer__column {
     display: -webkit-box;
     display: -webkit-flex;
@@ -743,8 +759,14 @@ button, input {
     margin-bottom: 0; }
   .footer__item:last-child {
     margin-bottom: 25px; }
+  .footer__list {
+    display: none; }
+  .opened {
+    display: block; }
   .footer__title {
-    position: relative; }
+    position: relative;
+    width: 275px;
+    cursor: pointer; }
     .footer__title:before {
       content: "";
       width: 20px;
@@ -752,12 +774,17 @@ button, input {
       background: #FDFDFD;
       display: block;
       position: absolute;
-      right: -200px;
+      right: 18px;
       top: 13px; }
-  .footer__list .opened {
-    display: block; }
-  .footer__list {
-    display: none; } }
+    .footer__title::after {
+      content: "";
+      width: 2px;
+      height: 20px;
+      background: #FDFDFD;
+      display: block;
+      position: absolute;
+      right: 27px;
+      top: 4px; } }
 
 @media (max-width: 768px) {
   .burger {
