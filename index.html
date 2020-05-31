@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная</title>
-	<meta name='description' content="" />
-	<meta name="keywords" content="" />
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 
@@ -22,7 +19,7 @@
 			<div class="container container_header">
 				<div class="header__logo">
 					<a href="#" class="logo">
-						<img src="img/Logo.svg" class="logo__pic">
+						<img src="img/Logo.svg" alt="" class="logo__pic">
 					</a>
 				</div>
 				<div class="header__menu">
@@ -57,101 +54,95 @@
 			</div>
 		</header>	
 
-		<section class="content">
-			<div class="container container-mobile grid">
+		<div class="container container-mobile grid">
+		<!-- SIDEBAR -->
+			<aside class="sidebar">
+				<ul class="categories">
+					<li class="categories__item">
+						<a class="categories__link categories__link_another" href="#">Another positions</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link categories__link_active" href="#">Engineering</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">Design</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">Marketing</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">Other</a>
+					</li>
+				</ul>
+			</aside>
 
-				<!-- SIDEBAR -->
-				<aside class="sidebar">
-					<ul class="categories">
-						<li class="categories__item">
-							<a class="categories__link categories__link_another" href="#">Another positions</a>
-						</li>
-						<li class="categories__item">
-							<a class="categories__link categories__link_active" href="#">Engineering</a>
-						</li>
-						<li class="categories__item">
-							<a class="categories__link" href="#">Design</a>
-						</li>
-						<li class="categories__item">
-							<a class="categories__link" href="#">Marketing</a>
-						</li>
-						<li class="categories__item">
-							<a class="categories__link" href="#">Other</a>
+			<!-- CONTENT -->
+				
+			<main class="page-content">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Careers</a>
 						</li>
 					</ul>
-				</aside>
-
-				<!-- CONTENT -->
-				
-			
-				<main class="page-content">
-					<section class="breadcrumbs">
-						<ul class="breadcrumbs__list">
-							<li class="breadcrumbs__item">
-								<a href="#" class="breadcrumbs__link">Careers</a>
-							</li>
-						</ul>
-					</section>
+				</div>
 					
-					<div class="page-content__head">
-						<div class="head__title">
-							<h1 class="title">Engineering</h1>
-						</div>
-						<div class="head__body">
-							<div class="head__img">
-								<img src="img/setting.svg"class="head__img-pic">
-							</div>
-							<div class="head__desc">
-								<p class="head__desc-text">
-									<a href="#" class="head__desc-link">18</a>
-									positions in this collection
-								</p>
-								<p class="head__desc-small">Taxgig team</p>
-							</div>
-						</div>
-					</div>	
-					<div class="page-content__body">
-						<ul class="positions">
-							<li class="positions__item">
-								<a href="#" class="positions__link">
-									<div class="positions__item-left">
-										<h2 class="positions__title">Senior ui/ux designer</h2>
-										<p class="positions__desc">Coral Gables, FL</p>
-									</div>
-									<div class="positions__item-right">
-										<a href="#" class="positions__right-link">Learn more</a>
-									</div>
-								</a>	
-							</li>
-							<li class="positions__item">
-								<a href="#" class="positions__link">
-									<div class="positions__item-left">
-										<h2 class="positions__title">Senior ui/ux designer</h2>
-										<p class="positions__desc">Coral Gables, FL</p>
-									</div>
-									<div class="positions__item-right">
-										<a href="#" class="positions__right-link">Learn more</a>
-									</div>
-								</a>	
-							</li>
-							<li class="positions__item">
-								<a href="#" class="positions__link">
-									<div class="positions__item-left">
-										<h2 class="positions__title">Senior ui/ux designer</h2>
-										<p class="positions__desc">Coral Gables, FL</p>
-									</div>
-									<div class="positions__item-right">
-										<a href="#" class="positions__right-link">Learn more</a>
-									</div>
-								</a>
-							</li>
-						</ul>
+				<div class="page-content__head">
+					<div class="head__title">
+						<h1 class="title">Engineering</h1>
 					</div>
-					
-				</main>
-				
-			</div>
-		</section>
+					<div class="head__body">
+						<div class="head__img">
+							<img src="img/setting.svg" alt="" class="head__img-pic">
+						</div>
+						<div class="head__desc">
+							<p class="head__desc-text">
+								<a href="#" class="head__desc-link">18</a>
+								positions in this collection
+							</p>
+							<p class="head__desc-small">Taxgig team</p>
+						</div>
+					</div>
+				</div>	
+				<div class="page-content__body">
+					<ul class="positions">
+						<li class="positions__item">
+							<a href="#" class="positions__link">
+								<div class="positions__item-left">
+									<h2 class="positions__title">Senior ui/ux designer</h2>
+									<p class="positions__desc">Coral Gables, FL</p>
+								</div>
+							</a>	
+							<div class="positions__item-right">
+								<a href="#" class="positions__right-link">Learn more</a>
+							</div>
+						</li>
+						<li class="positions__item">
+							<a href="#" class="positions__link">
+								<div class="positions__item-left">
+									<h2 class="positions__title">Senior ui/ux designer</h2>
+									<p class="positions__desc">Coral Gables, FL</p>
+								</div>
+							</a>	
+							<div class="positions__item-right">
+								<a href="#" class="positions__right-link">Learn more</a>
+							</div>	
+						</li>
+						<li class="positions__item">
+							<a href="#" class="positions__link">
+								<div class="positions__item-left">
+									<h2 class="positions__title">Senior ui/ux designer</h2>
+									<p class="positions__desc">Coral Gables, FL</p>
+								</div>
+							</a>	
+							<div class="positions__item-right">
+								<a href="#" class="positions__right-link">Learn more</a>
+							</div>
+						</li>
+					</ul>
+				</div>		
+			</main>
+		</div>
 		
 		<section class="question">
 			<div class="container">
@@ -183,7 +174,7 @@
 								<div class="footer__field">
 									<input class="footer__input" type="email" placeholder="Input your Email">
 									<button class="footer__submit" type="submit">
-										<img src="img/arrow_footer.svg" class="footer__submit-pic">
+										<img src="img/arrow_footer.svg" alt="" class="footer__submit-pic">
 									</button>
 								</div>
 							</form>
@@ -192,7 +183,7 @@
 					<div class="footer__about-logo">
 						<div class="footer__logo">
 							<a href="#" class="logo-footer">
-								<img src="img/Logo_footer.svg" class="logo__img">
+								<img src="img/Logo_footer.svg" alt="" class="logo__img">
 							</a>
 						</div>
 						<div class="footer__desc">
@@ -264,7 +255,7 @@
 			</div>
 			<!-- FOOTER-BOTTOM -->
 			<div class="footer__bottom">
-				<div class="footer__copy">© 2018 <span>taxgig</span>. All rights reserved.</div>
+				<div class="footer__copy">&copy; 2018 <span>taxgig</span>. All rights reserved.</div>
 			</div>
 		</div>
 	</footer>	
